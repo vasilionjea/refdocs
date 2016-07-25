@@ -20,6 +20,10 @@ Check RubyGems version
 
     gem -v
 
+List local gems whose name begins with 'D'
+
+    gem list D
+
 Update your local version of RubyGems
 
     gem update --system
