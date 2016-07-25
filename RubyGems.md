@@ -40,3 +40,7 @@ Show the dependencies of an installed gem
 
     gem dependency rake
     gem dependency | less # shows dependencies for all gems installed locally for your ruby environment
+
+Documentation and gem repository HTTP server
+
+    gem server
