@@ -46,8 +46,8 @@ While an addon is being developed, it can be tested with an actual existing Embe
 ### Install addon's bower dependencies in the consuming app
 Installing your addon's Bower dependencies in the consuming application is done via a _default Blueprint_ in the `afterInstall` hook. This actually brings in the addon's `bower_components/` to the consuming app's `bower_components/`.
 
-1. Create default blueprint with `ember g blueprint ember-loading-button`. The default blueprint will be automatically run after install (_in development it must be manually run after linking_).
-2. In the default blueprint's index file using the `afterInstall` hook add the following to install _moment.js_:
+1. Create the default blueprint with `ember g blueprint ember-loading-button`. The default blueprint will be automatically run after install (_in development it must be manually run after linking_).
+2. In the default blueprint's index file using the `afterInstall` hook, add the following to install _moment.js_:
 ```js
 afterInstall: function(options) {
   return this.addBowerPackagesToProject([ { name: 'moment' } ]);
