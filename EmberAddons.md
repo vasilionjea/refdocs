@@ -43,7 +43,7 @@ While an addon is being developed, it can be tested with an actual existing Embe
   * Add the addon as a dependency to the consuming app's _package.json_ file: `"ember-loading-button": "*"`
   * Link result: `/Users/YOU/workspace/addon-consumer/node_modules/ember-loading-button -> /usr/local/lib/node_modules/ember-loading-button -> /Users/YOU/workspace/ember-loading-button`
 
-### Installing addon's bower dependencies in the consuming app
+### Install addon's bower dependencies in the consuming app
 Installing your addon's Bower dependencies in the consuming application is done via a _default Blueprint_ in the `afterInstall` hook. This actually brings in the addon's `bower_components/` to the consuming app's `bower_components/`.
 
 1. Create default blueprint with `ember g blueprint ember-loading-button`. The default blueprint will be automatically run after install (_in development it must be manually run after linking_).
