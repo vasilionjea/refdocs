@@ -9,7 +9,7 @@ consuming Ember application.
 `ember addon ember-loading-button`
 
 ### Add a bower dependency
-We're using _moment.js_ as an example dependency:
+We're pretending that our fictional addon depends on _moment.js_:
 
 1. `bower install moment --save` - adds the dependency to `bower.json` and installs the files under `bower-components/` folder.
 2. Shim dependency for ES6 imports: `ember g vendor-shim moment`
