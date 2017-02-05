@@ -15,7 +15,7 @@ We're pretending that our fictional addon depends on _moment.js_:
 2. Shim dependency for ES6 imports: `ember g vendor-shim moment`
 
 ### Import vendor/bower dependencies in dummy app's build
-```js
+```javascript
 // ember-cli-build.js
 app.import('bower_components/moment/moment.js');
 app.import('vendor/shims/moment.js');
@@ -48,7 +48,7 @@ Installing your addon's Bower dependencies in the consuming application is done 
 
 1. Create the default blueprint with `ember g blueprint ember-loading-button`. The default blueprint will be automatically run after install (_in development it must be manually run after linking_).
 2. In the default blueprint's index file using the `afterInstall` hook, add the following to install _moment.js_:
-```js
+```javascript
 afterInstall: function(options) {
   return this.addBowerPackagesToProject([ { name: 'moment' } ]);
 }
@@ -56,7 +56,7 @@ afterInstall: function(options) {
 3. From the consuming app's root directory, manually run the addon's default blueprint using `ember g ember-loading-button`.
 4. Import your `bower_components/` and additional `vendor/` assets into the EmberApp's build file. This actually makes Broccoli aware to include the files in the final build.
   * Using the `included` hook, import your Bower dependencies in the consuming application's build:
-  ```js
+  ```javascript
   included: function(app) {
     this._super.included.apply(this, arguments);
     app.import(app.bowerDirectory + '/moment/moment.js');
