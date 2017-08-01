@@ -1,8 +1,17 @@
 
 # Secure Shell (SSH)
 
-Connect as <user> to remote <host> on specified <port>
-If you do not specify a username it uses your current username
+Secure Shell is a cryptographic protocol, but also a program (_or a set of utilities_) that allows two computers to exchange encrypted messages over an unsecured network (_for example the internet_). This protocol is used to do many things: 
+
+- encrypt a connection
+- authenticate a host
+- share files
+- access a remote terminal
+- SSH tunneling
+
+## Connect to remote host
+
+Connect as `<user>` to remote `<host>` on specified `<port>`. If you do not specify a username it uses your current username.
 
 	ssh -p <port> <user>@<host>
 
