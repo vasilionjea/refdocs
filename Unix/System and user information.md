@@ -1,82 +1,129 @@
+# System Information
 
-# System and user information
+## User
 
-Show distrubtion specific version information
+Display current username
 
-	cat /etc/lsb-release
+    whoami
 
-Display system uptime, memory, who is logged in and what they are doing
+Show currently logged in user
 
-	w
+    who
 
-Display your current username
+Permission details for current user
 
-	whoami
+    id
 
-Display the machine short hostname
+List users for system
 
-	hostname
+    users
 
-Display the machine fully qualified hostname
+Show login history for system (or system reboot history)
 
-	hostname -f
+    last
+    last reboot
+
+## Operating System
 
 Display the Unix system type being used
 
-	uname -a
-	
-Display real time information about process
+    uname -a
 
-	top
+Display system OS information (Linux)
 
-Display detailed real time information about the system
+    cat /etc/os-release
 
-	htop
+Show distribution specific version information (Linux)
 
-Show memory usage (in megabytes)
+    cat /etc/lsb-release
 
-	free -m
+Display basic system OS information or more detailed system config (macOS)
 
-Show list of running processes
+    sw_vers
+    system_profiler SPSoftwareDataType
 
-	ps aux | less
-	
-Network settings including computer IP
+## Command Info
 
-	ifconfig
+Search system commands and display description
 
-Output key / value pairs of current environment variables
+    whatis <command>
 
-	env
+## Uptime
 
-Log files location
+Display system uptime, memory, who is logged in and what they are doing
 
-	/var/log
+    w
 
 System uptime statistics
 
-	uptime
+    uptime
 
-Caclulate total disk usage / size for a folder
+## Hostname
 
-	du -sh <folder>
+Display the machine short hostname
 
-Show disk space usage and available space (-h makes the output human readable values)
-	
-	df -h
-	
-Find files under the root directory and below that are large than 10 MB
+    hostname
 
-	find / -size +10M -printf "%s - %p\n"
+Display the machine fully qualified hostname
+
+    hostname -f
+
+## Processes
+
+Display real time information about process
+
+    top
+
+Display detailed real time information about the system
+
+    htop
+
+Show list of running processes
+
+    ps aux | less
+
+## Memory
+
+Show memory usage (in megabytes)
+
+    free -m
+
+## Network
+
+Network settings including computer IP
+
+    ifconfig
+
+## Terminal
+
+Output key / value pairs of current environment variables
+
+    env
+
+Output current terminal settings
+
+    stty -a
+
+## Log Files
+
+Log files location
+
+    /var/log
+
+## System Mail
 
 System mail messages for users
 
-	/var/mail/<username>
+    /var/mail/<username>
 
 Show mail messages
 
-	cat /var/mail/<username>
+    cat /var/mail/<username>
 
 Empty mail messages (via truncate operator `>`)
 
-	> /var/mail/<username>
+    > /var/mail/<username>
+
+Empty mail messages (alternative command)
+
+    cat /dev/null > /var/mail/<username>

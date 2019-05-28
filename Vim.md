@@ -21,7 +21,7 @@ Vim features several modes, e.g. **normal mode**, **insert mode** and **command-
 **Command-line mode** is for running more complex commands like saving the file and exiting vim. Press `:` to start the command-line mode. To leave this mode you can also press `<ESC>`. To save the changes to the file use `:w` (or `:write`). To exit vim without saving your changes use `:q!` (or `:quit!`).
 
 
-These are some of the more useful commands in vim: 
+These are some of the more useful commands in vim:
 
 Command | Description
 ---|---
@@ -31,9 +31,9 @@ Command | Description
 `A` | enters insert mode *after* the last printable character of the current line
 `x` | delete character at the current cursor position
 `X` | delete character at the left to the current cursor position
-`w` | move to next word 
+`w` | move to next word
 `b` | move to previous word
-`0` | move to the beginning of line 
+`0` | move to the beginning of line
 `$` | move to the end of line
 `r` | replace – enters replace mode for one character. The next character you type will replace the character under the cursor.
 `R` | enters replace mode indefinitely. Every character you type will replace the character under the cursor and advance the cursor by one.
@@ -121,5 +121,5 @@ Later, when you want to return to your `vim` session, if you haven't suspended a
 
 Otherwise you will need to find your `vim` sessions's job ID by issuing `jobs`<kbd>enter</kbd> and then foregrounding the matching jobs `fg %[job ID]`<kbd>enter</kbd> eg. `fg %1`<kbd>enter</kbd>.
 
-  
+
 _Source: <https://stackoverflow.com/documentation/vim/879/getting-started-with-vim>_

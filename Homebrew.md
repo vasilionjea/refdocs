@@ -1,30 +1,79 @@
-
 # Homebrew
 
-## Install multiple versions of the same module
+## Information
 
-Install the latest version of a module
+Find formula
 
-    brew install <module>
+    brew search <formula>
 
-Keep the old version after install
+Show information for a specific formula
 
-    brew unlink <module>
+    brew info <formula>
 
-## Manage multiple versions of the same module
+Show installed formula excluding dependencies
 
-Show available homebrew versions of a particular module
+    brew leaves
 
-    brew versions <module>
+Show all installed formula including dependencies
 
-Switch to a specific version
+    brew list
 
-    git checkout <hash> <path>
+## Install
 
-Switch between version of a module, cleaning up state
+Install/Uninstall formula
 
-    brew switch <module> <version>
+    brew install <formula>
+    brew uninstall <formula>
 
-Remove an installed module
+Temporarily disable an installed formula
 
-    brew uninstall <module>
+    brew unlink <formula>
+
+## Update
+
+Fetch newest Homebrew version and formulae
+
+    brew update
+
+Upgrade existing outdated formulae
+
+    brew upgrade
+
+Remove outdated downloads and old installed versions of formulae
+
+    brew cleanup
+
+## Versions
+
+Switch between versions of a formula
+
+    brew switch <formula> <version>
+
+## Tap
+
+List tapped repositories
+
+    brew tap
+
+Add or remove tap repository
+
+    brew tap <tap-name>
+    brew untap <tap-name>
+
+## Cask
+
+Add cask to homebrew
+
+    brew tap caskroom/cask
+
+Update casks
+
+    brew cask upgrade
+
+Install cask
+
+    brew cask install <cask>
+
+List installed casks
+
+    brew cask list
