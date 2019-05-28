@@ -73,7 +73,7 @@ Add all files form the **scripts/** directory and below to the index.
 
 Add all files with a **js** extension to the index.
 
-	git add \*.js
+	git add *.js
 
 Interactively stage files
 
